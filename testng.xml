@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="All Test Suite">
+    <test name="Authorisation Test">
+        <parameter name="registeredUserName" value="RegisteredUser"/>
+        <parameter name="registeredUserPassword" value="!Password1234"/>
+        <parameter name="unregisteredUserName" value="UnregisteredUser"/>
+        <parameter name="incorrectPassword" value="!IncorrectPassword123"/>
+        <classes>
+            <class name="authorisation.AuthorisationTest"/>
+        </classes>
+    </test>
+
+    <test name="Bookstore test">
+        <classes>
+            <class name="book_store.BookCountSelectorTest"/>
+            <class name="book_store.PaginationButtonsTest"/>
+            <class name="book_store.SearchFieldTest"/>
+        </classes>
+    </test>
+</suite>
+

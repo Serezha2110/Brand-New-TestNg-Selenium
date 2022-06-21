@@ -1,0 +1,5 @@
+pages\BookStore.class
+pages\Profile.class
+pages\Login.class
+utils\DriverManager.class
+utils\General.class
