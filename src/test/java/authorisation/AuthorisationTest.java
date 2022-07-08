@@ -1,53 +1,53 @@
 package authorisation;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
+import pages.BasePage;
 import pages.BookStore;
 import pages.Login;
 import pages.Profile;
-import utils.DriverManager;
-import utils.General;
+import utils.BaseTest;
 
-public class AuthorisationTest {
+public class AuthorisationTest extends BaseTest {
 
-    WebDriver driver;
     String bookStorePage = "https://demoqa.com/books";
     String profilePage = "https://demoqa.com/profile";
 
-    @BeforeMethod(alwaysRun = true)
-    public void setUp() {
-        driver = DriverManager.initDriver();
-        General.goToPage(bookStorePage);
-    }
-
     @Parameters({"registeredUserName", "registeredUserPassword"})
-    @Test(testName = "Корректная авторизация и переход в личный кабинет", groups = {"authorisation", "positive"})
+    @Test(testName = "Корректная авторизация и переход в личный кабинет"
+            ,groups = {"authorisation", "positive"}
+    )
     public void correctAccessToProfile(String userName, String password) {
+        driver.get(bookStorePage);
         new BookStore(driver).clickLoginButton();
         Login login = new Login(driver);
 
         login.setUserName(userName)
                 .setPassword(password)
                 .clickLogin();
-        General.waitAndCheckCurrentURL(bookStorePage);
 
-        General.goToPage(profilePage);
+        BasePage basePage = new BasePage(driver);
+        basePage.waitAndCheckCurrentURL(bookStorePage);
+        driver.get(profilePage);
 
         new Profile(driver).checkNotLogginLabelNotExists();
     }
 
 
-    @Test(testName = "Переход в личный кабинет без авторизации", groups = {"authorisation", "negative", "testNow"})
-    public void authorisationWithCorrectCredentials() {
-        General.goToPage(profilePage);
-        System.out.println(1231231212);
+    @Test(testName = "Переход в личный кабинет без авторизации",
+            groups = {"authorisation", "negative", "testNow"}
+    )
+    public void openAccountPageWithoutAuthorisation() {
+        driver.get(profilePage);
         new Profile(driver).checkNotLogginLabelExists();
     }
 
 
     @Parameters({"registeredUserName", "incorrectPassword"})
-    @Test(testName = "Корректный логин и некорректный пароль", groups = {"authorisation", "negative"})
+    @Test(testName = "Корректный логин и некорректный пароль",
+            groups = {"authorisation", "negative"}
+    )
     public void correctUsernameAndIncorrectPassword(String registeredUserName, String incorrectPassword) {
+        driver.get(bookStorePage);
         new BookStore(driver).clickLoginButton();
         Login login = new Login(driver);
 
@@ -62,6 +62,7 @@ public class AuthorisationTest {
     @Parameters({"unregisteredUserName", "registeredUserPassword"})
     @Test(testName = "Незарегистрированое имя пользователя", groups = {"authorisation", "negative"})
     public void unregisteredUsername(String unregisteredUserName, String registeredUserPassword) {
+        driver.get(bookStorePage);
         new BookStore(driver).clickLoginButton();
         Login login = new Login(driver);
 
@@ -76,6 +77,7 @@ public class AuthorisationTest {
     @Parameters({"registeredUserPassword"})
     @Test(testName = "Пустое поле имени пользователя", groups = {"authorisation", "negative"})
     public void emptyUsernameField(String registeredUserPassword) {
+        driver.get(bookStorePage);
         new BookStore(driver).clickLoginButton();
 
         Login login = new Login(driver);
@@ -89,19 +91,13 @@ public class AuthorisationTest {
     @Parameters({"registeredUserName"})
     @Test(testName = "Пустое поле пароль", groups = {"authorisation", "negative"})
     public void emptyPasswordField(String registeredUserName) {
+        driver.get(bookStorePage);
         new BookStore(driver).clickLoginButton();
-
         Login login = new Login(driver);
 
         login.setUserName(registeredUserName)
                 .clickLogin();
         login.checkInputFieldHasInvalidStatus("Password");
-    }
-
-
-    @AfterMethod(alwaysRun = true)
-    public void tearDownMethod() {
-        DriverManager.dropWebDriver();
     }
 
 

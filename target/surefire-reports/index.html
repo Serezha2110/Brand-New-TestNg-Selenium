@@ -5,9 +5,8 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,11 +20,11 @@
      -->
   </head>
 
-  <body>    <div class="top-banner-root">
+  <body>
+    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-failed">Command line suite</span>
+            <a href="#" panel-name="suite-All_Test_Suite" class="navigator-link">
+              <span class="suite-name border-passed">All Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" panel-name="test-xml-All_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\Tarakani\IdeaProjects\TestNg-Selenium\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-All_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-All_Test_Suite" class="navigator-link ">
                     <span>7 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-All_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-All_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-All_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-All_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,125 +91,116 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">20 methods, 5 failed,   15 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Command_line_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="correctAccessToProfile">correctAccessToProfile</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="correctUsernameAndIncorrectPassword">correctUsernameAndIncorrectPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="emptyPasswordField">emptyPasswordField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="emptyUsernameField">emptyUsernameField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="unregisteredUsername">unregisteredUsername</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                    <span class="method-stats">20 methods,   20 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="hide-methods passed suite-All_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-All_Test_Suite -->
+                      <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Command_line_suite">
+                    <div class="method-list-content passed suite-All_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="authorisationWithCorrectCredentials">authorisationWithCorrectCredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="checkAbsenceOfBehaviorWhenClickOnDisabledButtons">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="checkAbsenceOfBehaviorWhenClickOnDisabledButtons">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="checkBothButtonsDisabled">checkBothButtonsDisabled</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="checkBothButtonsDisabled">checkBothButtonsDisabled</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="correctAccessToProfile(RegisteredUser, !Password1234)">correctAccessToProfile(RegisteredUser, !Password1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks10">maxCountOfBooks10</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="correctUsernameAndIncorrectPassword(RegisteredUser, !IncorrectPassword123)">correctUsernameAndIncorrectPassword(RegisteredUser, !IncorrectPassword123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks100">maxCountOfBooks100</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="emptyPasswordField(RegisteredUser)">emptyPasswordField(RegisteredUser)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks20">maxCountOfBooks20</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="emptyUsernameField(!Password1234)">emptyUsernameField(!Password1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks25">maxCountOfBooks25</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks10">maxCountOfBooks10</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks5">maxCountOfBooks5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks100">maxCountOfBooks100</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks50">maxCountOfBooks50</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks20">maxCountOfBooks20</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="movingBetweenPagesUsingPreviousAndNextButtons">movingBetweenPagesUsingPreviousAndNextButtons</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks25">maxCountOfBooks25</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="noBooksSearch">noBooksSearch</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks5">maxCountOfBooks5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByAuthor">searchByAuthor</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.BookCountSelectorTest" class="method navigator-link" hash-for-method="maxCountOfBooks50">maxCountOfBooks50</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByFullTitle">searchByFullTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.PaginationButtonsTest" class="method navigator-link" hash-for-method="movingBetweenPagesUsingPreviousAndNextButtons">movingBetweenPagesUsingPreviousAndNextButtons</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByPhraseInTitle">searchByPhraseInTitle</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="noBooksSearch">noBooksSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByPublisher">searchByPublisher</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="openAccountPageWithoutAuthorisation">openAccountPageWithoutAuthorisation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByAuthor">searchByAuthor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByFullTitle">searchByFullTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByPhraseInTitle">searchByPhraseInTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="book_store.SearchFieldTest" class="method navigator-link" hash-for-method="searchByPublisher">searchByPublisher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="authorisation.AuthorisationTest" class="method navigator-link" hash-for-method="unregisteredUsername(UnregisteredUser, !Password1234)">unregisteredUsername(UnregisteredUser, !Password1234)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-All_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -221,81 +211,63 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-failed">
+        <div panel-name="suite-All_Test_Suite" class="panel All_Test_Suite">
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">authorisation.AuthorisationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="correctAccessToProfile">
-                  </a> <!-- correctAccessToProfile -->
+                  <a name="correctAccessToProfile(RegisteredUser, !Password1234)">
+                  </a> <!-- correctAccessToProfile(RegisteredUser, !Password1234) -->
                   <span class="method-name">correctAccessToProfile</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;registeredUserName&apos; is required by @Test on method correctAccessToProfile but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(RegisteredUser, !Password1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="correctUsernameAndIncorrectPassword">
-                  </a> <!-- correctUsernameAndIncorrectPassword -->
+                  <a name="correctUsernameAndIncorrectPassword(RegisteredUser, !IncorrectPassword123)">
+                  </a> <!-- correctUsernameAndIncorrectPassword(RegisteredUser, !IncorrectPassword123) -->
                   <span class="method-name">correctUsernameAndIncorrectPassword</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;registeredUserName&apos; is required by @Test on method correctUsernameAndIncorrectPassword but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(RegisteredUser, !IncorrectPassword123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="emptyPasswordField">
-                  </a> <!-- emptyPasswordField -->
+                  <a name="emptyPasswordField(RegisteredUser)">
+                  </a> <!-- emptyPasswordField(RegisteredUser) -->
                   <span class="method-name">emptyPasswordField</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;registeredUserName&apos; is required by @Test on method emptyPasswordField but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(RegisteredUser)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="emptyUsernameField">
-                  </a> <!-- emptyUsernameField -->
+                  <a name="emptyUsernameField(!Password1234)">
+                  </a> <!-- emptyUsernameField(!Password1234) -->
                   <span class="method-name">emptyUsernameField</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;registeredUserPassword&apos; is required by @Test on method emptyUsernameField but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(!Password1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="unregisteredUsername">
-                  </a> <!-- unregisteredUsername -->
+                  <a name="openAccountPageWithoutAuthorisation">
+                  </a> <!-- openAccountPageWithoutAuthorisation -->
+                  <span class="method-name">openAccountPageWithoutAuthorisation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="unregisteredUsername(UnregisteredUser, !Password1234)">
+                  </a> <!-- unregisteredUsername(UnregisteredUser, !Password1234) -->
                   <span class="method-name">unregisteredUsername</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregisteredUsername but has not been marked @Optional or defined
-
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(UnregisteredUser, !Password1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
-          <div class="suite-Command_line_suite-class-passed">
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">book_store.SearchFieldTest</span>
@@ -337,23 +309,37 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">authorisation.AuthorisationTest</span>
+              <span class="class-name">book_store.PaginationButtonsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="authorisationWithCorrectCredentials">
-                  </a> <!-- authorisationWithCorrectCredentials -->
-                  <span class="method-name">authorisationWithCorrectCredentials</span>
+                  <a name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons">
+                  </a> <!-- checkAbsenceOfBehaviorWhenClickOnDisabledButtons -->
+                  <span class="method-name">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBothButtonsDisabled">
+                  </a> <!-- checkBothButtonsDisabled -->
+                  <span class="method-name">checkBothButtonsDisabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="movingBetweenPagesUsingPreviousAndNextButtons">
+                  </a> <!-- movingBetweenPagesUsingPreviousAndNextButtons -->
+                  <span class="method-name">movingBetweenPagesUsingPreviousAndNextButtons</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+          <div class="suite-All_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">book_store.BookCountSelectorTest</span>
@@ -402,72 +388,48 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">book_store.PaginationButtonsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons">
-                  </a> <!-- checkAbsenceOfBehaviorWhenClickOnDisabledButtons -->
-                  <span class="method-name">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="checkBothButtonsDisabled">
-                  </a> <!-- checkBothButtonsDisabled -->
-                  <span class="method-name">checkBothButtonsDisabled</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="movingBetweenPagesUsingPreviousAndNextButtons">
-                  </a> <!-- movingBetweenPagesUsingPreviousAndNextButtons -->
-                  <span class="method-name">movingBetweenPagesUsingPreviousAndNextButtons</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-        </div> <!-- panel Command_line_suite -->
-        <div panel-name="test-xml-Command_line_suite" class="panel">
+          </div> <!-- suite-All_Test_Suite-class-passed -->
+        </div> <!-- panel All_Test_Suite -->
+        <div panel-name="test-xml-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Tarakani\IdeaProjects\TestNg-Selenium\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;Authorisation Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;registeredUserName&quot; value=&quot;RegisteredUser&quot;/&gt;
+    &lt;parameter name=&quot;incorrectPassword&quot; value=&quot;!IncorrectPassword123&quot;/&gt;
+    &lt;parameter name=&quot;registeredUserPassword&quot; value=&quot;!Password1234&quot;/&gt;
+    &lt;parameter name=&quot;unregisteredUserName&quot; value=&quot;UnregisteredUser&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;authorisation.AuthorisationTest&quot;/&gt;
       &lt;class name=&quot;book_store.BookCountSelectorTest&quot;/&gt;
-      &lt;class name=&quot;book_store.PaginationButtonsTest&quot;/&gt;
       &lt;class name=&quot;book_store.SearchFieldTest&quot;/&gt;
+      &lt;class name=&quot;book_store.PaginationButtonsTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+  &lt;/test&gt; &lt;!-- Authorisation Test --&gt;
+&lt;/suite&gt; &lt;!-- All Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Command_line_suite" class="panel">
+        <div panel-name="testlist-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Command line suite</span>
+            <span class="header-content">Tests for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (4 classes)</span>
+                <span class="test-name">Authorisation Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Command_line_suite" class="panel">
+        <div panel-name="group-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Command line suite</span>
+            <span class="header-content">Groups for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -490,10 +452,6 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
               <span class="test-group-name">authorisation</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">authorisationWithCorrectCredentials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">correctAccessToProfile</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -507,6 +465,10 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">emptyUsernameField</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">openAccountPageWithoutAuthorisation</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -546,10 +508,6 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
               <span class="test-group-name">negative</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">authorisationWithCorrectCredentials</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
                 <span class="method-in-group-name">correctUsernameAndIncorrectPassword</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -563,6 +521,10 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
               </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">noBooksSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">openAccountPageWithoutAuthorisation</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -658,21 +620,25 @@ Parameter &apos;unregisteredUserName&apos; is required by @Test on method unregi
               <span class="test-group-name">testNow</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">authorisationWithCorrectCredentials</span>
+                <span class="method-in-group-name">maxCountOfBooks5</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">openAccountPageWithoutAuthorisation</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Command_line_suite" class="panel">
+        <div panel-name="times-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Command line suite</span>
+            <span class="header-content">Times for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Command_line_suite');
-function tableData_Command_line_suite() {
+suiteTableInitFunctions.push('tableData_All_Test_Suite');
+function tableData_All_Test_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -682,108 +648,108 @@ data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'noBooksSearch')
 data.setCell(0, 2, 'book_store.SearchFieldTest')
-data.setCell(0, 3, 10774);
+data.setCell(0, 3, 17370);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'checkAbsenceOfBehaviorWhenClickOnDisabledButtons')
 data.setCell(1, 2, 'book_store.PaginationButtonsTest')
-data.setCell(1, 3, 2690);
+data.setCell(1, 3, 8256);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'maxCountOfBooks100')
-data.setCell(2, 2, 'book_store.BookCountSelectorTest')
-data.setCell(2, 3, 700);
+data.setCell(2, 1, 'correctAccessToProfile')
+data.setCell(2, 2, 'authorisation.AuthorisationTest')
+data.setCell(2, 3, 7402);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'authorisationWithCorrectCredentials')
-data.setCell(3, 2, 'authorisation.AuthorisationTest')
-data.setCell(3, 3, 672);
+data.setCell(3, 1, 'maxCountOfBooks20')
+data.setCell(3, 2, 'book_store.BookCountSelectorTest')
+data.setCell(3, 3, 6620);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'maxCountOfBooks10')
 data.setCell(4, 2, 'book_store.BookCountSelectorTest')
-data.setCell(4, 3, 665);
+data.setCell(4, 3, 6072);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'maxCountOfBooks20')
-data.setCell(5, 2, 'book_store.BookCountSelectorTest')
-data.setCell(5, 3, 653);
+data.setCell(5, 1, 'correctUsernameAndIncorrectPassword')
+data.setCell(5, 2, 'authorisation.AuthorisationTest')
+data.setCell(5, 3, 5969);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'maxCountOfBooks25')
-data.setCell(6, 2, 'book_store.BookCountSelectorTest')
-data.setCell(6, 3, 621);
+data.setCell(6, 1, 'movingBetweenPagesUsingPreviousAndNextButtons')
+data.setCell(6, 2, 'book_store.PaginationButtonsTest')
+data.setCell(6, 3, 5486);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'movingBetweenPagesUsingPreviousAndNextButtons')
-data.setCell(7, 2, 'book_store.PaginationButtonsTest')
-data.setCell(7, 3, 616);
+data.setCell(7, 1, 'maxCountOfBooks100')
+data.setCell(7, 2, 'book_store.BookCountSelectorTest')
+data.setCell(7, 3, 5024);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchByPublisher')
-data.setCell(8, 2, 'book_store.SearchFieldTest')
-data.setCell(8, 3, 602);
+data.setCell(8, 1, 'emptyPasswordField')
+data.setCell(8, 2, 'authorisation.AuthorisationTest')
+data.setCell(8, 3, 4736);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'searchByFullTitle')
-data.setCell(9, 2, 'book_store.SearchFieldTest')
-data.setCell(9, 3, 528);
+data.setCell(9, 1, 'unregisteredUsername')
+data.setCell(9, 2, 'authorisation.AuthorisationTest')
+data.setCell(9, 3, 4604);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'maxCountOfBooks50')
-data.setCell(10, 2, 'book_store.BookCountSelectorTest')
-data.setCell(10, 3, 512);
+data.setCell(10, 1, 'searchByAuthor')
+data.setCell(10, 2, 'book_store.SearchFieldTest')
+data.setCell(10, 3, 4380);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'searchByPhraseInTitle')
-data.setCell(11, 2, 'book_store.SearchFieldTest')
-data.setCell(11, 3, 506);
+data.setCell(11, 1, 'maxCountOfBooks25')
+data.setCell(11, 2, 'book_store.BookCountSelectorTest')
+data.setCell(11, 3, 4134);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'checkBothButtonsDisabled')
-data.setCell(12, 2, 'book_store.PaginationButtonsTest')
-data.setCell(12, 3, 461);
+data.setCell(12, 1, 'emptyUsernameField')
+data.setCell(12, 2, 'authorisation.AuthorisationTest')
+data.setCell(12, 3, 4058);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'searchByAuthor')
+data.setCell(13, 1, 'searchByPhraseInTitle')
 data.setCell(13, 2, 'book_store.SearchFieldTest')
-data.setCell(13, 3, 422);
+data.setCell(13, 3, 3672);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'maxCountOfBooks5')
+data.setCell(14, 1, 'maxCountOfBooks50')
 data.setCell(14, 2, 'book_store.BookCountSelectorTest')
-data.setCell(14, 3, 368);
+data.setCell(14, 3, 3608);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'correctAccessToProfile')
-data.setCell(15, 2, 'authorisation.AuthorisationTest')
-data.setCell(15, 3, 0);
+data.setCell(15, 1, 'checkBothButtonsDisabled')
+data.setCell(15, 2, 'book_store.PaginationButtonsTest')
+data.setCell(15, 3, 3479);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'correctUsernameAndIncorrectPassword')
-data.setCell(16, 2, 'authorisation.AuthorisationTest')
-data.setCell(16, 3, 0);
+data.setCell(16, 1, 'searchByFullTitle')
+data.setCell(16, 2, 'book_store.SearchFieldTest')
+data.setCell(16, 3, 3473);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'emptyUsernameField')
-data.setCell(17, 2, 'authorisation.AuthorisationTest')
-data.setCell(17, 3, 0);
+data.setCell(17, 1, 'maxCountOfBooks5')
+data.setCell(17, 2, 'book_store.BookCountSelectorTest')
+data.setCell(17, 3, 3200);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'emptyPasswordField')
+data.setCell(18, 1, 'openAccountPageWithoutAuthorisation')
 data.setCell(18, 2, 'authorisation.AuthorisationTest')
-data.setCell(18, 3, 0);
+data.setCell(18, 3, 2690);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'unregisteredUsername')
-data.setCell(19, 2, 'authorisation.AuthorisationTest')
-data.setCell(19, 3, 0);
-window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+data.setCell(19, 1, 'searchByPublisher')
+data.setCell(19, 2, 'book_store.SearchFieldTest')
+data.setCell(19, 3, 2564);
+window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
-              <div id="times-div-Command_line_suite">
-              </div> <!-- times-div-Command_line_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-All_Test_Suite">
+              </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Command_line_suite" class="panel">
+        <div panel-name="reporter-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Command line suite</span>
+            <span class="header-content">Reporter output for All Test Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+        <div panel-name="ignored-methods-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Command_line_suite" class="panel">
+        <div panel-name="chronological-All_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -791,198 +757,392 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">authorisationWithCorrectCredentials</span>
-                <span class="method-start">5083 ms</span>
+                <span class="method-name">noBooksSearch</span>
+                <span class="method-start">5483 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">maxCountOfBooks10</span>
+                <span class="method-start">5483 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</span>
+                <span class="method-start">5486 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">correctAccessToProfile(RegisteredUser, !Password1234)</span>
+                <span class="method-start">5489 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">5775 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">11572 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">12522 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">12894 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">13602 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">13752 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">maxCountOfBooks100</span>
+                <span class="method-start">14008 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">14715 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">correctUsernameAndIncorrectPassword(RegisteredUser, !IncorrectPassword123)</span>
+                <span class="method-start">15182 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkBothButtonsDisabled</span>
+                <span class="method-start">16404 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">19041 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">19887 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">6587 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20716 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks10</span>
-                <span class="method-start">10406 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">11073 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11819 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks100</span>
-                <span class="method-start">15305 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">16006 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">16720 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks20</span>
-                <span class="method-start">19642 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">20297 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">20999 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks25</span>
-                <span class="method-start">24674 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">25296 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">26009 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks5</span>
-                <span class="method-start">29774 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">30144 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">30862 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">maxCountOfBooks50</span>
-                <span class="method-start">34579 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">35093 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">35820 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">20839 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">checkAbsenceOfBehaviorWhenClickOnDisabledButtons</span>
-                <span class="method-start">39114 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">41810 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">21153 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">42573 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">22004 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">checkBothButtonsDisabled</span>
-                <span class="method-start">46083 ms</span>
+                <span class="method-name">maxCountOfBooks20</span>
+                <span class="method-start">22660 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">46546 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">22855 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">47243 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">movingBetweenPagesUsingPreviousAndNextButtons</span>
-                <span class="method-start">50638 ms</span>
+                <span class="method-start">23221 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">51255 ms</span>
-              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptyPasswordField(RegisteredUser)</span>
+                <span class="method-start">23982 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">51954 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">noBooksSearch</span>
-                <span class="method-start">55262 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">66046 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">66753 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">26219 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByAuthor</span>
-                <span class="method-start">71809 ms</span>
+                <span class="method-start">28093 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.PaginationButtonsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">72232 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">28709 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">28720 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">29282 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30102 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">30178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">maxCountOfBooks25</span>
+                <span class="method-start">32034 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">emptyUsernameField(!Password1234)</span>
+                <span class="method-start">32101 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">32475 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">72940 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">33271 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByFullTitle</span>
-                <span class="method-start">76318 ms</span>
+                <span class="method-start">35339 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">76848 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">36164 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">36171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">77558 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">37128 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">37237 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">maxCountOfBooks5</span>
+                <span class="method-start">38809 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">38814 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">openAccountPageWithoutAuthorisation</span>
+                <span class="method-start">39061 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">39769 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByPhraseInTitle</span>
-                <span class="method-start">81215 ms</span>
+                <span class="method-start">41706 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">81723 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">41753 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">42016 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">42565 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">42781 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">unregisteredUsername(UnregisteredUser, !Password1234)</span>
+                <span class="method-start">44381 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">maxCountOfBooks50</span>
+                <span class="method-start">44953 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">45380 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">82452 ms</span>
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">46206 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchByPublisher</span>
-                <span class="method-start">85483 ms</span>
+                <span class="method-start">48052 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.BookCountSelectorTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod</span>
-                <span class="method-start">86086 ms</span>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">48562 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">authorisation.AuthorisationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">48988 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">book_store.SearchFieldTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">50618 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
-<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

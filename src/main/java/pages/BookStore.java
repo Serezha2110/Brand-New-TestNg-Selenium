@@ -3,16 +3,10 @@ package pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.Test;
-import utils.DriverManager;
-import utils.General;
 
 import java.util.List;
-import java.util.Objects;
 
-public class BookStore {
-
-    WebDriver driver;
+public class BookStore extends BasePage{
 
     By loginButton = By.cssSelector("#login");
     By searchField = By.cssSelector("#searchBox");
@@ -28,21 +22,21 @@ public class BookStore {
     By previousButton = By.cssSelector(".-previous button");
 
     public BookStore(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void clickLoginButton() {
-        General.fluentWaitElement(loginButton).click();
+        fluentWaitElement(loginButton).click();
     }
 
     public BookStore setSearchRequest(String request) {
-        General.fluentWaitElement(searchField).sendKeys(request);
+        fluentWaitElement(searchField).sendKeys(request);
         return this;
     }
 
     public BookStore checkBookCount(int expectedBookCount) {
         try {
-            General.fluentWaitElement(bookTitle);
+            fluentWaitElement(bookTitle);
         } catch (TimeoutException e) {
             if (expectedBookCount == 0) {
                 return this;
@@ -56,7 +50,7 @@ public class BookStore {
 
 
     public BookStore checkAllBooksOnPageContainsPhraseInTitle(String phrase) {
-        General.fluentWaitElement(bookTitle);
+        fluentWaitElement(bookTitle);
         List<WebElement> bookTitles = driver.findElements(bookTitle);
         bookTitles.forEach(o -> Assert.assertTrue(o.getText().contains(phrase)
                 , "Book on page '" + bookTitle + "' does not have phrase '" + phrase + "' in title"));
@@ -65,7 +59,7 @@ public class BookStore {
 
 
     public BookStore checkAllBooksOnPageHaveAnAuthor(String author) {
-        General.fluentWaitElement(this.author);
+        fluentWaitElement(this.author);
 
         List<WebElement> bookTitles = driver.findElements(bookTitle);
         List<WebElement> bookAuthors = driver.findElements(this.author);
@@ -78,7 +72,7 @@ public class BookStore {
 
 
     public BookStore checkAllBooksOnPageHaveAPublisher(String publisher) {
-        General.fluentWaitElement(this.publisher);
+        fluentWaitElement(this.publisher);
 
         List<WebElement> bookTitles = driver.findElements(bookTitle);
         List<WebElement> bookPublishers = driver.findElements(this.publisher);
@@ -91,7 +85,7 @@ public class BookStore {
 
 
     public BookStore setMaxBookCountSelectorByValue(String value) {
-        General.fluentWaitElement(maxBookCountSelector);
+        fluentWaitElement(maxBookCountSelector);
         WebElement selector = driver.findElement(maxBookCountSelector);
         Select select = new Select(selector);
         select.selectByValue(value);
@@ -100,7 +94,7 @@ public class BookStore {
 
 
     public BookStore checkRowsCount(int expectedRowsCount) {
-        General.fluentWaitElement(row);
+        fluentWaitElement(row);
         int actualRowsCount = driver.findElements(row).size();
         Assert.assertEquals(actualRowsCount, expectedRowsCount
                 , "Unexpected count of rows. Actual: " + actualRowsCount + " Expected: " + expectedRowsCount);
@@ -109,7 +103,7 @@ public class BookStore {
 
 
     public BookStore checkTotalPagesCount(String expectedTotalPagesCount) {
-        General.fluentWaitElement(totalPagesCounter);
+        fluentWaitElement(totalPagesCounter);
         String actualTotalPagesCount = driver.findElement(totalPagesCounter).getText();
         Assert.assertEquals(actualTotalPagesCount, expectedTotalPagesCount
                 , "Unexpected count of pages. Actual: " + actualTotalPagesCount + " Expected: " + expectedTotalPagesCount);
@@ -119,7 +113,7 @@ public class BookStore {
 
     public BookStore clickNext() throws ElementClickInterceptedException {
         try {
-            General.fluentWaitElement(nextButton).click();
+            fluentWaitElement(nextButton).click();
         } catch (ElementClickInterceptedException e) {
         }
         return this;
@@ -128,7 +122,7 @@ public class BookStore {
 
     public BookStore clickPrevious() {
         try {
-            General.fluentWaitElement(previousButton).click();
+            fluentWaitElement(previousButton).click();
         } catch (ElementClickInterceptedException e) {
         }
         return this;
@@ -136,7 +130,7 @@ public class BookStore {
 
 
     public BookStore checkCurrentPageIs(String expectedCurrentPage) {
-        String actualCurrentPage = General.fluentWaitElement(jumpToPageInput).getAttribute("value");
+        String actualCurrentPage = fluentWaitElement(jumpToPageInput).getAttribute("value");
         Assert.assertEquals(actualCurrentPage, expectedCurrentPage, "Actual current page number is '" + actualCurrentPage + "'");
         return this;
     }
@@ -149,7 +143,7 @@ public class BookStore {
         } else if (button.equals("next")) {
             elementButton = nextButton;
         }
-        String buttonActualStatus = General.fluentWaitElement(elementButton).getAttribute("disabled");
+        String buttonActualStatus = fluentWaitElement(elementButton).getAttribute("disabled");
 
         Assert.assertEquals(buttonActualStatus == null, isEnabled
                 , "Actual button status is '" + buttonActualStatus + "'");

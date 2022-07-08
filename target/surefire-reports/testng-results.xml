@@ -2,83 +2,208 @@
 <testng-results ignored="0" total="20" passed="20" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-21T22:29:17 EEST" name="All Test Suite" finished-at="2022-06-21T22:31:10 EEST" duration-ms="112962">
+  <suite started-at="2022-07-08T15:40:07 EEST" name="All Test Suite" finished-at="2022-07-08T15:40:58 EEST" duration-ms="51383">
     <groups>
       <group name="search">
-        <method signature="SearchFieldTest.noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="noBooksSearch" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByAuthor" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByFullTitle" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByPhraseInTitle" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByPublisher" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="noBooksSearch" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByAuthor" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByFullTitle" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByPhraseInTitle" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByPublisher" class="book_store.SearchFieldTest"/>
       </group> <!-- search -->
       <group name="testNow">
-        <method signature="AuthorisationTest.authorisationWithCorrectCredentials()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="authorisationWithCorrectCredentials" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.openAccountPageWithoutAuthorisation()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="openAccountPageWithoutAuthorisation" class="authorisation.AuthorisationTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks5" class="book_store.BookCountSelectorTest"/>
       </group> <!-- testNow -->
       <group name="negative">
-        <method signature="AuthorisationTest.authorisationWithCorrectCredentials()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="authorisationWithCorrectCredentials" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.correctUsernameAndIncorrectPassword(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="correctUsernameAndIncorrectPassword" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="emptyPasswordField" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="emptyUsernameField" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.unregisteredUsername(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="unregisteredUsername" class="authorisation.AuthorisationTest"/>
-        <method signature="SearchFieldTest.noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="noBooksSearch" class="book_store.SearchFieldTest"/>
+        <method signature="AuthorisationTest.correctUsernameAndIncorrectPassword(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="correctUsernameAndIncorrectPassword" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="emptyPasswordField" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="emptyUsernameField" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.openAccountPageWithoutAuthorisation()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="openAccountPageWithoutAuthorisation" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.unregisteredUsername(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="unregisteredUsername" class="authorisation.AuthorisationTest"/>
+        <method signature="SearchFieldTest.noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="noBooksSearch" class="book_store.SearchFieldTest"/>
       </group> <!-- negative -->
       <group name="PaginationButtonTest">
-        <method signature="PaginationButtonsTest.checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" class="book_store.PaginationButtonsTest"/>
-        <method signature="PaginationButtonsTest.checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="checkBothButtonsDisabled" class="book_store.PaginationButtonsTest"/>
-        <method signature="PaginationButtonsTest.movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="movingBetweenPagesUsingPreviousAndNextButtons" class="book_store.PaginationButtonsTest"/>
+        <method signature="PaginationButtonsTest.checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" class="book_store.PaginationButtonsTest"/>
+        <method signature="PaginationButtonsTest.checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="checkBothButtonsDisabled" class="book_store.PaginationButtonsTest"/>
+        <method signature="PaginationButtonsTest.movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="movingBetweenPagesUsingPreviousAndNextButtons" class="book_store.PaginationButtonsTest"/>
       </group> <!-- PaginationButtonTest -->
       <group name="countOfBooksSelector">
-        <method signature="BookCountSelectorTest.maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks10" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks100" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks20" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks25" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks5" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks50" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks10" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks100" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks20" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks25" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks5" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks50" class="book_store.BookCountSelectorTest"/>
       </group> <!-- countOfBooksSelector -->
       <group name="authorisation">
-        <method signature="AuthorisationTest.authorisationWithCorrectCredentials()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="authorisationWithCorrectCredentials" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.correctAccessToProfile(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="correctAccessToProfile" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.correctUsernameAndIncorrectPassword(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="correctUsernameAndIncorrectPassword" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="emptyPasswordField" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="emptyUsernameField" class="authorisation.AuthorisationTest"/>
-        <method signature="AuthorisationTest.unregisteredUsername(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="unregisteredUsername" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.correctAccessToProfile(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="correctAccessToProfile" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.correctUsernameAndIncorrectPassword(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="correctUsernameAndIncorrectPassword" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="emptyPasswordField" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="emptyUsernameField" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.openAccountPageWithoutAuthorisation()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="openAccountPageWithoutAuthorisation" class="authorisation.AuthorisationTest"/>
+        <method signature="AuthorisationTest.unregisteredUsername(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="unregisteredUsername" class="authorisation.AuthorisationTest"/>
       </group> <!-- authorisation -->
       <group name="positive">
-        <method signature="AuthorisationTest.correctAccessToProfile(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" name="correctAccessToProfile" class="authorisation.AuthorisationTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks10" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks100" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks20" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks25" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks5" class="book_store.BookCountSelectorTest"/>
-        <method signature="BookCountSelectorTest.maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" name="maxCountOfBooks50" class="book_store.BookCountSelectorTest"/>
-        <method signature="PaginationButtonsTest.checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" class="book_store.PaginationButtonsTest"/>
-        <method signature="PaginationButtonsTest.checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="checkBothButtonsDisabled" class="book_store.PaginationButtonsTest"/>
-        <method signature="PaginationButtonsTest.movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" name="movingBetweenPagesUsingPreviousAndNextButtons" class="book_store.PaginationButtonsTest"/>
-        <method signature="SearchFieldTest.searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByAuthor" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByFullTitle" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByPhraseInTitle" class="book_store.SearchFieldTest"/>
-        <method signature="SearchFieldTest.searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" name="searchByPublisher" class="book_store.SearchFieldTest"/>
+        <method signature="AuthorisationTest.correctAccessToProfile(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" name="correctAccessToProfile" class="authorisation.AuthorisationTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks10" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks100" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks20" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks25" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks5" class="book_store.BookCountSelectorTest"/>
+        <method signature="BookCountSelectorTest.maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" name="maxCountOfBooks50" class="book_store.BookCountSelectorTest"/>
+        <method signature="PaginationButtonsTest.checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" class="book_store.PaginationButtonsTest"/>
+        <method signature="PaginationButtonsTest.checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="checkBothButtonsDisabled" class="book_store.PaginationButtonsTest"/>
+        <method signature="PaginationButtonsTest.movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" name="movingBetweenPagesUsingPreviousAndNextButtons" class="book_store.PaginationButtonsTest"/>
+        <method signature="SearchFieldTest.searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByAuthor" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByFullTitle" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByPhraseInTitle" class="book_store.SearchFieldTest"/>
+        <method signature="SearchFieldTest.searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" name="searchByPublisher" class="book_store.SearchFieldTest"/>
       </group> <!-- positive -->
     </groups>
-    <test started-at="2022-06-21T22:29:17 EEST" name="Authorisation Test" finished-at="2022-06-21T22:29:51 EEST" duration-ms="34296">
+    <test started-at="2022-07-08T15:40:07 EEST" name="Authorisation Test" finished-at="2022-07-08T15:40:58 EEST" duration-ms="51383">
+      <class name="book_store.SearchFieldTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:07 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:12 EEST" duration-ms="5448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:12 EEST" name="noBooksSearch" finished-at="2022-07-08T15:40:30 EEST" duration-ms="17370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noBooksSearch -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:30 EEST" name="afterMethod" finished-at="2022-07-08T15:40:33 EEST" duration-ms="3359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:33 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:35 EEST" duration-ms="1870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:35 EEST" name="searchByAuthor" finished-at="2022-07-08T15:40:39 EEST" duration-ms="4380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByAuthor -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:39 EEST" name="afterMethod" finished-at="2022-07-08T15:40:40 EEST" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:40 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:42 EEST" duration-ms="2067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:42 EEST" name="searchByFullTitle" finished-at="2022-07-08T15:40:46 EEST" duration-ms="3473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByFullTitle -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:46 EEST" name="afterMethod" finished-at="2022-07-08T15:40:47 EEST" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:47 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:49 EEST" duration-ms="1926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:49 EEST" name="searchByPhraseInTitle" finished-at="2022-07-08T15:40:52 EEST" duration-ms="3672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByPhraseInTitle -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:52 EEST" name="afterMethod" finished-at="2022-07-08T15:40:53 EEST" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:53 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:55 EEST" duration-ms="1845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:55 EEST" name="searchByPublisher" finished-at="2022-07-08T15:40:57 EEST" duration-ms="2564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchByPublisher -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.SearchFieldTest@1de5f259]" started-at="2022-07-08T15:40:57 EEST" name="afterMethod" finished-at="2022-07-08T15:40:58 EEST" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- book_store.SearchFieldTest -->
+      <class name="book_store.BookCountSelectorTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:07 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:12 EEST" duration-ms="5463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:12 EEST" name="maxCountOfBooks10" finished-at="2022-07-08T15:40:18 EEST" duration-ms="6072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks10 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:18 EEST" name="afterMethod" finished-at="2022-07-08T15:40:19 EEST" duration-ms="949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:19 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:21 EEST" duration-ms="1484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:21 EEST" name="maxCountOfBooks100" finished-at="2022-07-08T15:40:26 EEST" duration-ms="5024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks100 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:26 EEST" name="afterMethod" finished-at="2022-07-08T15:40:28 EEST" duration-ms="1673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:28 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:30 EEST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:30 EEST" name="maxCountOfBooks20" finished-at="2022-07-08T15:40:36 EEST" duration-ms="6620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks20 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:36 EEST" name="afterMethod" finished-at="2022-07-08T15:40:37 EEST" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:37 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:39 EEST" duration-ms="1855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:39 EEST" name="maxCountOfBooks25" finished-at="2022-07-08T15:40:43 EEST" duration-ms="4134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks25 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:43 EEST" name="afterMethod" finished-at="2022-07-08T15:40:44 EEST" duration-ms="955" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:44 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:46 EEST" duration-ms="1674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:46 EEST" name="maxCountOfBooks5" finished-at="2022-07-08T15:40:49 EEST" duration-ms="3200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks5 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:49 EEST" name="afterMethod" finished-at="2022-07-08T15:40:50 EEST" duration-ms="764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:50 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:52 EEST" duration-ms="2170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:52 EEST" name="maxCountOfBooks50" finished-at="2022-07-08T15:40:55 EEST" duration-ms="3608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maxCountOfBooks50 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.BookCountSelectorTest@3e11f9e9]" started-at="2022-07-08T15:40:55 EEST" name="afterMethod" finished-at="2022-07-08T15:40:56 EEST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- book_store.BookCountSelectorTest -->
       <class name="authorisation.AuthorisationTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:17 EEST" name="setUp" finished-at="2022-06-21T22:29:22 EEST" duration-ms="5210" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:07 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:12 EEST" duration-ms="5485" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="authorisationWithCorrectCredentials()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:22 EEST" name="authorisationWithCorrectCredentials" finished-at="2022-06-21T22:29:23 EEST" duration-ms="939" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authorisationWithCorrectCredentials -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:23 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:24 EEST" duration-ms="722" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:24 EEST" name="setUp" finished-at="2022-06-21T22:29:27 EEST" duration-ms="3398" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="correctAccessToProfile(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:27 EEST" name="correctAccessToProfile" finished-at="2022-06-21T22:29:29 EEST" duration-ms="1608" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="correctAccessToProfile(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:12 EEST" name="correctAccessToProfile" finished-at="2022-07-08T15:40:20 EEST" duration-ms="7402" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,15 +219,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctAccessToProfile -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:29 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:30 EEST" duration-ms="745" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:20 EEST" name="afterMethod" finished-at="2022-07-08T15:40:20 EEST" duration-ms="706" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:30 EEST" name="setUp" finished-at="2022-06-21T22:29:34 EEST" duration-ms="4211" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:20 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:22 EEST" duration-ms="1578" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="correctUsernameAndIncorrectPassword(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:34 EEST" name="correctUsernameAndIncorrectPassword" finished-at="2022-06-21T22:29:35 EEST" duration-ms="1594" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="correctUsernameAndIncorrectPassword(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:22 EEST" name="correctUsernameAndIncorrectPassword" finished-at="2022-07-08T15:40:28 EEST" duration-ms="5969" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,15 +243,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctUsernameAndIncorrectPassword -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:35 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:36 EEST" duration-ms="692" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:28 EEST" name="afterMethod" finished-at="2022-07-08T15:40:29 EEST" duration-ms="850" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:36 EEST" name="setUp" finished-at="2022-06-21T22:29:40 EEST" duration-ms="3376" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:29 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:31 EEST" duration-ms="1976" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:40 EEST" name="emptyPasswordField" finished-at="2022-06-21T22:29:40 EEST" duration-ms="437" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="emptyPasswordField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:31 EEST" name="emptyPasswordField" finished-at="2022-07-08T15:40:36 EEST" duration-ms="4736" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,15 +262,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyPasswordField -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:40 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:41 EEST" duration-ms="754" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:36 EEST" name="afterMethod" finished-at="2022-07-08T15:40:37 EEST" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:41 EEST" name="setUp" finished-at="2022-06-21T22:29:44 EEST" duration-ms="3254" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:37 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:39 EEST" duration-ms="1997" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:44 EEST" name="emptyUsernameField" finished-at="2022-06-21T22:29:44 EEST" duration-ms="465" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="emptyUsernameField(java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:39 EEST" name="emptyUsernameField" finished-at="2022-07-08T15:40:43 EEST" duration-ms="4058" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,15 +281,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyUsernameField -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:44 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:45 EEST" duration-ms="720" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:43 EEST" name="afterMethod" finished-at="2022-07-08T15:40:44 EEST" duration-ms="1071" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:45 EEST" name="setUp" finished-at="2022-06-21T22:29:49 EEST" duration-ms="3317" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:44 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:46 EEST" duration-ms="1822" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="unregisteredUsername(java.lang.String,java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:49 EEST" name="unregisteredUsername" finished-at="2022-06-21T22:29:50 EEST" duration-ms="1890" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openAccountPageWithoutAuthorisation()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:46 EEST" name="openAccountPageWithoutAuthorisation" finished-at="2022-07-08T15:40:49 EEST" duration-ms="2690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openAccountPageWithoutAuthorisation -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:49 EEST" name="afterMethod" finished-at="2022-07-08T15:40:49 EEST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:49 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:51 EEST" duration-ms="1813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="unregisteredUsername(java.lang.String, java.lang.String)[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:51 EEST" name="unregisteredUsername" finished-at="2022-07-08T15:40:56 EEST" duration-ms="4604" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -180,187 +317,49 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- unregisteredUsername -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:authorisation.AuthorisationTest@121314f7]" started-at="2022-06-21T22:29:50 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:51 EEST" duration-ms="700" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:authorisation.AuthorisationTest@6404f418]" started-at="2022-07-08T15:40:56 EEST" name="afterMethod" finished-at="2022-07-08T15:40:57 EEST" duration-ms="718" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- authorisation.AuthorisationTest -->
-    </test> <!-- Authorisation Test -->
-    <test started-at="2022-06-21T22:29:51 EEST" name="Bookstore test" finished-at="2022-06-21T22:31:10 EEST" duration-ms="78616">
-      <class name="book_store.SearchFieldTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:35 EEST" name="setUp" finished-at="2022-06-21T22:30:39 EEST" duration-ms="3509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="noBooksSearch()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:39 EEST" name="noBooksSearch" finished-at="2022-06-21T22:30:50 EEST" duration-ms="11048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- noBooksSearch -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:50 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:51 EEST" duration-ms="696" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:51 EEST" name="setUp" finished-at="2022-06-21T22:30:55 EEST" duration-ms="4411" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchByAuthor()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:55 EEST" name="searchByAuthor" finished-at="2022-06-21T22:30:55 EEST" duration-ms="387" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchByAuthor -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:55 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:56 EEST" duration-ms="707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:30:56 EEST" name="setUp" finished-at="2022-06-21T22:31:00 EEST" duration-ms="3470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchByFullTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:00 EEST" name="searchByFullTitle" finished-at="2022-06-21T22:31:00 EEST" duration-ms="443" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchByFullTitle -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:00 EEST" name="tearDownMethod" finished-at="2022-06-21T22:31:01 EEST" duration-ms="701" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:01 EEST" name="setUp" finished-at="2022-06-21T22:31:04 EEST" duration-ms="3181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchByPhraseInTitle()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:04 EEST" name="searchByPhraseInTitle" finished-at="2022-06-21T22:31:04 EEST" duration-ms="486" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchByPhraseInTitle -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:04 EEST" name="tearDownMethod" finished-at="2022-06-21T22:31:05 EEST" duration-ms="713" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:05 EEST" name="setUp" finished-at="2022-06-21T22:31:08 EEST" duration-ms="3276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="searchByPublisher()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:08 EEST" name="searchByPublisher" finished-at="2022-06-21T22:31:09 EEST" duration-ms="584" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchByPublisher -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.SearchFieldTest@4a83a74a]" started-at="2022-06-21T22:31:09 EEST" name="tearDownMethod" finished-at="2022-06-21T22:31:10 EEST" duration-ms="725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-      </class> <!-- book_store.SearchFieldTest -->
-      <class name="book_store.BookCountSelectorTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:51 EEST" name="setUp" finished-at="2022-06-21T22:29:54 EEST" duration-ms="2887" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks10()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:54 EEST" name="maxCountOfBooks10" finished-at="2022-06-21T22:29:55 EEST" duration-ms="594" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks10 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:55 EEST" name="tearDownMethod" finished-at="2022-06-21T22:29:55 EEST" duration-ms="730" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:55 EEST" name="setUp" finished-at="2022-06-21T22:29:59 EEST" duration-ms="3476" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks100()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:59 EEST" name="maxCountOfBooks100" finished-at="2022-06-21T22:29:59 EEST" duration-ms="537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks100 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:29:59 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:00 EEST" duration-ms="738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:00 EEST" name="setUp" finished-at="2022-06-21T22:30:03 EEST" duration-ms="3194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks20()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:03 EEST" name="maxCountOfBooks20" finished-at="2022-06-21T22:30:04 EEST" duration-ms="562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks20 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:04 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:05 EEST" duration-ms="708" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:05 EEST" name="setUp" finished-at="2022-06-21T22:30:08 EEST" duration-ms="3379" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks25()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:08 EEST" name="maxCountOfBooks25" finished-at="2022-06-21T22:30:08 EEST" duration-ms="479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks25 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:08 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:09 EEST" duration-ms="727" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:09 EEST" name="setUp" finished-at="2022-06-21T22:30:13 EEST" duration-ms="3374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks5()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:13 EEST" name="maxCountOfBooks5" finished-at="2022-06-21T22:30:13 EEST" duration-ms="489" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks5 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:13 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:14 EEST" duration-ms="729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:14 EEST" name="setUp" finished-at="2022-06-21T22:30:18 EEST" duration-ms="3814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="maxCountOfBooks50()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:18 EEST" name="maxCountOfBooks50" finished-at="2022-06-21T22:30:18 EEST" duration-ms="463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- maxCountOfBooks50 -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.BookCountSelectorTest@4c60d6e9]" started-at="2022-06-21T22:30:18 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:19 EEST" duration-ms="738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-      </class> <!-- book_store.BookCountSelectorTest -->
       <class name="book_store.PaginationButtonsTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:19 EEST" name="setUp" finished-at="2022-06-21T22:30:22 EEST" duration-ms="3318" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:07 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:12 EEST" duration-ms="5315" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:22 EEST" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" finished-at="2022-06-21T22:30:25 EEST" duration-ms="2699" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkAbsenceOfBehaviorWhenClickOnDisabledButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:12 EEST" name="checkAbsenceOfBehaviorWhenClickOnDisabledButtons" finished-at="2022-07-08T15:40:21 EEST" duration-ms="8256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkAbsenceOfBehaviorWhenClickOnDisabledButtons -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:25 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:26 EEST" duration-ms="783" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:21 EEST" name="afterMethod" finished-at="2022-07-08T15:40:22 EEST" duration-ms="956" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:26 EEST" name="setUp" finished-at="2022-06-21T22:30:30 EEST" duration-ms="4239" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:22 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:23 EEST" duration-ms="1686" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:30 EEST" name="checkBothButtonsDisabled" finished-at="2022-06-21T22:30:30 EEST" duration-ms="280" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBothButtonsDisabled()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:23 EEST" name="checkBothButtonsDisabled" finished-at="2022-07-08T15:40:27 EEST" duration-ms="3479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBothButtonsDisabled -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:30 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:31 EEST" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:27 EEST" name="afterMethod" finished-at="2022-07-08T15:40:28 EEST" duration-ms="950" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:31 EEST" name="setUp" finished-at="2022-06-21T22:30:34 EEST" duration-ms="3011" status="PASS">
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:28 EEST" name="beforeMethod" finished-at="2022-07-08T15:40:30 EEST" duration-ms="2374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:34 EEST" name="movingBetweenPagesUsingPreviousAndNextButtons" finished-at="2022-06-21T22:30:35 EEST" duration-ms="729" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="movingBetweenPagesUsingPreviousAndNextButtons()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:30 EEST" name="movingBetweenPagesUsingPreviousAndNextButtons" finished-at="2022-07-08T15:40:36 EEST" duration-ms="5486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- movingBetweenPagesUsingPreviousAndNextButtons -->
-        <test-method is-config="true" signature="tearDownMethod()[pri:0, instance:book_store.PaginationButtonsTest@15043a2f]" started-at="2022-06-21T22:30:35 EEST" name="tearDownMethod" finished-at="2022-06-21T22:30:35 EEST" duration-ms="721" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:book_store.PaginationButtonsTest@729d991e]" started-at="2022-07-08T15:40:36 EEST" name="afterMethod" finished-at="2022-07-08T15:40:37 EEST" duration-ms="1389" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownMethod -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- book_store.PaginationButtonsTest -->
-    </test> <!-- Bookstore test -->
+    </test> <!-- Authorisation Test -->
   </suite> <!-- All Test Suite -->
 </testng-results>

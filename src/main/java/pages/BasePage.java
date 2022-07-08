@@ -1,5 +1,6 @@
-package utils;
+package pages;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -7,27 +8,27 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
 
 import java.time.Duration;
 
-public class General {
+public class BasePage {
 
-    static WebDriver driver;
+    protected WebDriver driver;
 
+    public BasePage(WebDriver driver){
+        this.driver = driver;
+    }
 
-    public static WebElement fluentWaitElement(final By locator) {
-        driver = DriverManager.getWebDriver();
-        Wait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+    public WebElement fluentWaitElement(final By locator) {
+        Wait<WebDriver> wait = new FluentWait<>(driver)
                 .withTimeout(Duration.ofSeconds(10L))
                 .pollingEvery(Duration.ofSeconds(1L))
                 .ignoring(NoSuchElementException.class);
-
         return wait.until(driver1 -> driver1.findElement(locator));
     }
 
-
-    public static boolean isElementPresent(By locatorKey) {
-        driver = DriverManager.getWebDriver();
+    public boolean isElementPresent(By locatorKey) {
         try {
             driver.findElement(locatorKey);
             return true;
@@ -36,15 +37,10 @@ public class General {
         }
     }
 
-    public static void waitAndCheckCurrentURL(String expectedURL) {
-        driver = DriverManager.getWebDriver();
+    public void waitAndCheckCurrentURL(String expectedURL) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10L));
         wait.until(driver1 -> driver1.getCurrentUrl().equals(expectedURL));
     }
 
-    public static void goToPage(String page) {
-        driver = DriverManager.getWebDriver();
-        driver.get(page);
-    }
 
 }

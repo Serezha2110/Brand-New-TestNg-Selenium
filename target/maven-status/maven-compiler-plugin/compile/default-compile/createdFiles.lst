@@ -1,5 +1,5 @@
+pages\BasePage.class
 pages\BookStore.class
 pages\Profile.class
 pages\Login.class
-utils\DriverManager.class
-utils\General.class
+utils\BaseTest.class
